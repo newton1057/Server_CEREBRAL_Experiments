@@ -1,0 +1,192 @@
+{
+  "profile": {
+    "initials": "EIDB",
+    "name": "Eduardo Isaac",
+    "fatherLastName": "Davila",
+    "motherLastName": "Bernal",
+    "age": "24",
+    "email": "newton1057@gmail.com",
+    "phone": "9983868530",
+    "password": "Rocanlover12",
+    "gender": "Male",
+    "educationLevel": "Degree"
+  },
+  "level": {
+    "knowledgeOfServiceRobots": "Yes",
+    "reason": "N/A",
+    "familiarityLevel": "Seen virtual service robots",
+    "knowledgeLevel": "Programmed virtual robots"
+  },
+  "permissions": {
+    "publicAnswers": true,
+    "contactedForExperiments": false
+  },
+  "Phases": [
+    "",
+    "Introduction",
+    "Traditional_Experiment_Training",
+    "Traditional_Experiment_Assessment",
+    "Traditional_Experiment_Quiz",
+    "Simulated_Experiment_Training",
+    "Simulated_Experiment_Assesment",
+    "Simulated_Experiment_Quiz",
+    "Comparison_Between_Experiments",
+    "Finish"
+  ],
+  "Phases_completed": [
+    "Introduction",
+    "Traditional_Experiment_Training",
+    "Traditional_Experiment_Assessment",
+    "Traditional_Experiment_Quiz",
+    "Simulated_Experiment_Training",
+    "Simulated_Experiment_Assesment",
+    "Simulated_Experiment_Quiz",
+    "Comparison_Between_Experiments",
+    "Finish"
+  ],
+  "Solution_Experiment_Traditional": {
+    "arrival": 0.00689817,
+    "id": 88,
+    "risk": 0.95198991,
+    "time": 4.38516348
+  },
+  "Quiz_Experiment_Traditional": {
+    "question1": "Neutral",
+    "question2": "Disagree",
+    "question3": "Disagree",
+    "question4": "Strongly Disagree",
+    "question5": "Strongly Disagree",
+    "question6": "Neutral",
+    "question7": "Strongly Disagree",
+    "question8": "Neutral",
+    "question9": "Disagree"
+  },
+  "Solutions_Experiment_Simulated": [
+    [
+      {
+        "id": 91,
+        "time": 2.79846753,
+        "risk": 0.76933348,
+        "arrival": 0.01075652,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 86,
+        "time": 15.6633316,
+        "risk": 0.95238095,
+        "arrival": 0.00681608,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 64,
+        "time": 19.05448862,
+        "risk": 0.95238095,
+        "arrival": 0.00160527,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 17,
+        "time": 8.05275194,
+        "risk": 0.4068711,
+        "arrival": 0.00074417,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 12,
+        "time": 9.81703932,
+        "risk": 0.95238095,
+        "arrival": 0.00177698,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 8,
+        "time": 2.52605029,
+        "risk": 0.63198021,
+        "arrival": 0.00094832,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 35,
+        "time": 9.839785,
+        "risk": 0.95238095,
+        "arrival": 0.00411889,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 62,
+        "time": 15.26756732,
+        "risk": 0.78919595,
+        "arrival": 0.04359233,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 90,
+        "time": 4.45064594,
+        "risk": 0.95238095,
+        "arrival": 0.00042986,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 13,
+        "time": 6.04249375,
+        "risk": 0.95238095,
+        "arrival": 0.00393088,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 71,
+        "time": 13.66954904,
+        "risk": 0.91348541,
+        "arrival": 0.00508726,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 25,
+        "time": 9.69142717,
+        "risk": 0.95058501,
+        "arrival": 0.00727679,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ]
+  ],
+  "Solution_Experiment_Simulated": {
+    "arrival": 0.00621786,
+    "id": 32,
+    "risk": 0.712882,
+    "time": 16.99799731
+  },
+  "Quiz_Experiment_Simulated": {
+    "question1": "Disagree",
+    "question2": "Disagree",
+    "question3": "Disagree",
+    "question4": "Disagree",
+    "question5": "Disagree",
+    "question6": "Disagree",
+    "question7": "Disagree",
+    "question8": "Disagree",
+    "question9": "Disagree"
+  },
+  "Quiz_Beetween_Experiments": {
+    "question1": "Strongly Disagree",
+    "question2": "Simulation Method",
+    "question3": "Line Graph Method",
+    "question5": "",
+    "methodSelect": "Simulation"
+  }
+}
