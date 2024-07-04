@@ -9,16 +9,42 @@ import random
 app = Flask(__name__)
 CORS(app)  # Habilita CORS para todas las rutas
 
-@app.route('/API/Users', methods=['GET'])
-def Get_Users():
-    # Define la ruta completa al archivo JSON
-    file_path = os.path.join(os.path.dirname(__file__), 'db', 'db.json')
+# Functions general
+def emailToUsername( email : str ):
+    """
+    Function to convert an email to a username.
     
-    # Lee el archivo JSON
-    with open(file_path, 'r') as file:
-        data = json.load(file)
+    The username is the part of the email before the '@' symbol.
     
-    return jsonify(data)
+    Parameters:
+    - email: Email address to convert to username
+    
+    Example:
+    newton1057@gmail.com - newton1057
+
+    Returns the username
+    """
+    return email.split('@')[0]
+
+def pathUserName ( username : str):
+    """
+    Function to get the path of the user file.
+
+    The path is the path of the user file in the database (JSON).
+
+    Parameters:
+    - username: Username of the user.
+
+    Example:
+    newton1057 - newton1057.json
+
+    Returns the path of the user file.
+    """
+
+    file_path = os.path.join(os.path.dirname(__file__), 'db') # Define the path to the database folder
+    user_file_path = os.path.join(file_path, f'{username}.json') # Define the path to the user file
+    return user_file_path
+
 
 
 @app.route('/API/Users', methods=['POST'])
@@ -37,7 +63,6 @@ def Create_User():
     """
     # Get the new user data from the request
     newUser = request.json
-    print(newUser)
 
     # Define the username based on the user's email
     username = newUser['profile']['email'].split('@')[0]
@@ -57,16 +82,23 @@ def Create_User():
 
 @app.route('/API/Login', methods=['POST'])
 def Login():
-    user = request.json
+    """
+    Endpoint to login a user.
+    
+    The request should contain the following data:
+    - email: User email
+    - password: User password
+    
+    The user data should be retrieved from the database (Files JSON).
+    
+    Returns a JSON response with the user data.
+    """
 
+    user = request.json
     username = user['email'].split('@')[0]
-    print(username)
 
     file_path = os.path.join(os.path.dirname(__file__), 'db')
-
     user_file_path = os.path.join(file_path, f'{username}.json')
-
-    print(user_file_path)
 
     if os.path.exists(user_file_path):
        with open(user_file_path, 'r') as file:
@@ -80,23 +112,20 @@ def Login():
     
 @app.route('/API/Quiz_Experiment_Traditional', methods=['POST'])
 def Save_Quiz_Experiment_Traditional():
+    """
+    Endpoint for saver questions of Quiz of Experiment Traitional.
+
+    
+    """
     data = request.json
 
     username = data['email'].split('@')[0]
-
-    print(username)
-    print(data)
     
     file_path = os.path.join(os.path.dirname(__file__), 'db')
-
     user_file_path = os.path.join(file_path, f'{username}.json')
-
-    print(user_file_path)
 
     with open(user_file_path, 'r') as file:
         data_user = json.load(file)
-
-    print(data_user)
 
     data_user['Quiz_Experiment_Traditional'] = data['data']
 
@@ -108,7 +137,6 @@ def Save_Quiz_Experiment_Traditional():
 @app.route('/API/UpdatePhase', methods=['POST'])
 def Update_Phase():
     data = request.json
-    print(data)
     
     username = data['email'].split('@')[0]
     phase = data['phase']
@@ -139,22 +167,51 @@ def Update_Phase():
 
 @app.route('/API/GetPhases', methods=['POST'])
 def Get_Phases():
-    data = request.json
+    """
+    Endpoint to obtain the phases of the user.
+
+    The request should contain the following data:
+    - email: User email.
     
-    username = data['email'].split('@')[0]
+    Returns a JSON with the phases of the user.
 
-    print(username)
+    Example response:
+    {
+    "Phases": [
+        "",
+        "Introduction",
+        "Traditional_Experiment_Training",
+        "Traditional_Experiment_Assessment",
+        "Traditional_Experiment_Quiz",
+        "Simulated_Experiment_Training",
+        "Simulated_Experiment_Assesment",
+        "Simulated_Experiment_Quiz",
+        "Comparison_Between_Experiments",
+        "Finish"
+    ],
+    "Phases_Completed": [
+        "Introduction",
+        "Traditional_Experiment_Training",
+        "Traditional_Experiment_Assessment",
+        "Traditional_Experiment_Quiz",
+        "Simulated_Experiment_Training",
+        "Simulated_Experiment_Assesment",
+        "Simulated_Experiment_Quiz",
+        "Comparison_Between_Experiments",
+        "Finish"
+    ]
+    }
+    """
 
-    file_path = os.path.join(os.path.dirname(__file__), 'db')
+    data = request.json # Get the data from the request
 
-    user_file_path = os.path.join(file_path, f'{username}.json')
-
-    print(user_file_path)
+    email = data['email'] # Get email
+    
+    username = emailToUsername(email)
+    user_file_path = pathUserName(username)
 
     with open(user_file_path, 'r') as file:
-        data_user = json.load(file)
-
-    print(data_user)
+        data_user = json.load(file) # Load the user data
 
     if 'Phases' in data_user and 'Phases_completed' in data_user:
         return jsonify({"Phases": data_user['Phases'], "Phases_Completed": data_user['Phases_completed']}), 200
@@ -163,14 +220,19 @@ def Get_Phases():
 
 @app.route('/API/MoveMouse', methods=['GET'])
 def Move_Mouse():
-    # Esperar 1 segundos antes de comenzar
-    time.sleep(1)
-    #pyautogui.moveTo(900, 300)
-    pyautogui.click(900, 300)
-    time.sleep(1)
+    """
+    Endpoint to move the mouse to a specific position.
+
+    The mouse should move to the position (x, y) specified in the request.
+    """
+    time.sleep(1) # Wait 1 second
+    # pyautogui.moveTo(900, 300)
+    pyautogui.click(900, 300) # Move the mouse to the x, y and click
     
-    #pyautogui.moveTo(1075, 650) # Move the mouse to the x, y (Button Compartir)
+    time.sleep(1) # Wait 1 second
+    # pyautogui.moveTo(1075, 650) # Move the mouse to the x, y and click
     pyautogui.click(1075, 650)
+
     return jsonify({'status': 'OK'}), 200
 
 
@@ -202,6 +264,8 @@ def Save_Video():
 
     return jsonify({'status': 'Failed to save video'}), 500
 
+
+
 @app.route('/API/Solutions_Experiment_Traditional', methods=['GET'])
 def Get_Solutions_Experiment_Traditional():
     """
@@ -212,45 +276,63 @@ def Get_Solutions_Experiment_Traditional():
     - time: Time associated with the solution
     - risk: Risk level associated with the solution
     - arrival: Arrival time associated with the solution
+    - time_normalized: Normalized time value
+    - risk_normalized: Normalized risk value
+    - arrival_normalized: Normalized arrival value
     
     Example response:
     {
         "solutions": [
-            {
-                "id": 1,
-                "time": 12.34,
-                "risk": 0.56,
-                "arrival": 23.45
-            },
-            {
-                "id": 2,
-                "time": 67.89,
-                "risk": 0.12,
-                "arrival": 34.56
-            },
-            {
-                "id": 3,
-                "time": 78.90,
-                "risk": 0.34,
-                "arrival": 45.67
-            },
-            {
-                "id": 4,
-                "time": 56.78,
-                "risk": 0.78,
-                "arrival": 12.34
-            }
+                {
+                    "arrival": 0.8547351436291185,
+                    "arrival_normalized": 0.93775279,
+                    "id": 27,
+                    "risk": 1.0,
+                    "risk_normalized": 0.95238095,
+                    "time": 0.8189215064308476,
+                    "time_normalized": 22.60391874
+                },
+                {
+                    "arrival": 0.00013552002075421486,
+                    "arrival_normalized": 0.00016533,
+                    "id": 3,
+                    "risk": 1.0,
+                    "risk_normalized": 0.95238095,
+                    "time": 0.34075900735323816,
+                    "time_normalized": 10.65271578
+                },
+                {
+                    "arrival": 0.007342445192255449,
+                    "arrival_normalized": 0.0080721,
+                    "id": 10,
+                    "risk": 0.9975361173727239,
+                    "risk_normalized": 0.95005879,
+                    "time": 0.3152653554473582,
+                    "time_normalized": 10.01552694
+                },
+                {
+                    "arrival": 0.005972652063457751,
+                    "arrival_normalized": 0.00656929,
+                    "id": 28,
+                    "risk": 1.0,
+                    "risk_normalized": 0.95238095,
+                    "time": 0.17697053210862104,
+                    "time_normalized": 6.55898339
+                }
         ]
     }
     """
 
-    # Simulated data for the solutions NOTE: This should be replaced with the Algorithm to get the solutions
+    # Simulated data for the solutions.
+    # NOTE: This should be replaced with the Algorithm to get the solutions
     # Define path to the file
-    filePath = os.path.join(os.path.dirname(__file__), 'solutions_test', 'obj_space_gen_001.out')
+
+    nameFile = 'obj_space_gen_001.out'  # Name of the file with the solutions
+    filePath = os.path.join(os.path.dirname(__file__), 'solutions_test', nameFile) # Define the path to the file
 
     # Read the file and extract the data for lines
     with open(filePath, 'r') as file:
-        lines = file.readlines()
+        lines = file.readlines() # Read the lines of the file
 
     # Process the data
     data = []
@@ -258,6 +340,24 @@ def Get_Solutions_Experiment_Traditional():
         values = line.split()  # Divided the line into values
         values = [float(value) for value in values]  # Convert the values to float
         data.append(values)  # Add the values to the data list
+
+    time = [] # List to store the time values
+    risk = [] # List to store the risk values
+    arrive = [] # List to store the arrival values
+    
+    for values in data:
+        time.append(values[0]) # Add the time value to the list
+        risk.append(values[1]) # Add the risk value to the list
+        arrive.append(values[2]) # Add the arrival value to the list
+
+    min_time = min(time) # Get the minimum time value
+    max_time = max(time) # Get the maximum time value
+
+    min_risk = min(risk) # Get the minimum risk value
+    max_risk = max(risk) # Get the maximum risk value
+
+    min_arrive = min(arrive) # Get the minimum arrival value
+    max_arrive = max(arrive) # Get the maximum arrival value
 
     # Get the solutions
     solutions = [] # List to store the solutions
@@ -272,10 +372,14 @@ def Get_Solutions_Experiment_Traditional():
 
         # Create the solution object
         solution = {
+            'nameFile': nameFile,
             'id': random_index,
-            'time': data[random_index][0],
-            'risk': data[random_index][1],
-            'arrival': data[random_index][2]
+            'time_normalized': data[random_index][0],
+            'risk_normalized': data[random_index][1],
+            'arrival_normalized': data[random_index][2],
+            'time': ((data[random_index][0] - min_time) / (max_time - min_time)),
+            'risk': ((data[random_index][1] - min_risk) / (max_risk - min_risk)),
+            'arrival': ((data[random_index][2] - min_arrive) / (max_arrive - min_arrive)),
         }
 
         solutions.append(solution) # Add the solution to the list
@@ -346,8 +450,14 @@ def Get_Solutions_Experiment_Simulated():
 
     # Get the solutions
     solutions = [] # List to store the solutions
+    numbers_random = []
     for i in range(4):
         random_index = random.randint(0, len(data) - 1) # Get a random index for the solution
+
+        while random_index in numbers_random:
+            random_index = random.randint(0, len(data) - 1)
+
+        numbers_random.append(random_index)
         
         # Create the solution object
         solution = {

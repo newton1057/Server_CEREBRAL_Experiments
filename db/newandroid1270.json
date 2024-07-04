@@ -1,0 +1,71 @@
+{
+  "profile": {
+    "initials": "EIDB",
+    "name": "Eduardo Isaac",
+    "fatherLastName": "Davila",
+    "motherLastName": "Bernal",
+    "age": "23",
+    "email": "newandroid1270@gmail.com",
+    "phone": "9983868530",
+    "password": "Rocanlover12",
+    "gender": "Male",
+    "educationLevel": "Degree"
+  },
+  "level": {
+    "knowledgeOfServiceRobots": "Yes",
+    "reason": "He programado",
+    "familiarityLevel": "Seen virtual service robots",
+    "knowledgeLevel": "Programmed virtual robots"
+  },
+  "permissions": {
+    "publicAnswers": true,
+    "contactedForExperiments": false
+  },
+  "Phases": [
+    "",
+    "Introduction",
+    "Traditional_Experiment_Training",
+    "Traditional_Experiment_Assessment",
+    "Traditional_Experiment_Quiz",
+    "Simulated_Experiment_Training",
+    "Simulated_Experiment_Assesment",
+    "Simulated_Experiment_Quiz",
+    "Comparison_Between_Experiments",
+    "Finish"
+  ],
+  "Phases_completed": [
+    "Introduction",
+    "Traditional_Experiment_Training",
+    "Traditional_Experiment_Assessment",
+    "Traditional_Experiment_Quiz",
+    "Simulated_Experiment_Training",
+    "Simulated_Experiment_Assesment",
+    "Simulated_Experiment_Quiz",
+    "Comparison_Between_Experiments",
+    "Finish"
+  ],
+  "Solution_Experiment_Traditional": {
+    "arrival": 0.00537282,
+    "id": 21,
+    "risk": 0.75098727,
+    "time": 2.70952361
+  },
+  "Quiz_Experiment_Traditional": {
+    "question1": "Strongly Disagree",
+    "question2": "Strongly Disagree",
+    "question3": "Strongly Disagree",
+    "question4": "Disagree",
+    "question5": "Disagree",
+    "question6": "Disagree",
+    "question7": "Disagree",
+    "question8": "Disagree",
+    "question9": "Disagree"
+  },
+  "Quiz_Beetween_Experiments": {
+    "question1": "Disagree",
+    "question2": "Simulation Method",
+    "question3": "Line Graph Method",
+    "question5": "n/a",
+    "methodSelect": "Simulation"
+  }
+}

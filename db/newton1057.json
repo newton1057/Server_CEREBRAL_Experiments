@@ -45,10 +45,13 @@
     "Finish"
   ],
   "Solution_Experiment_Traditional": {
-    "arrival": 0.00689817,
-    "id": 88,
-    "risk": 0.95198991,
-    "time": 4.38516348
+    "arrival": 0.002970338533988568,
+    "arrival_normalized": 0.00327543,
+    "id": 55,
+    "risk": 0.6336823013191708,
+    "risk_normalized": 0.60713386,
+    "time": 0.014462657995063813,
+    "time_normalized": 2.49725837
   },
   "Quiz_Experiment_Traditional": {
     "question1": "Neutral",
@@ -163,30 +166,507 @@
         "sliderDissatisfiedSatisfied": 50,
         "sliderBoredExcited": 50
       }
+    ],
+    [
+      {
+        "id": 83,
+        "time": 10.8176559,
+        "risk": 0.00990099,
+        "arrival": 0.00187563,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "100"
+      },
+      {
+        "id": 3,
+        "time": 10.65271578,
+        "risk": 0.95238095,
+        "arrival": 0.00016533,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "75"
+      },
+      {
+        "id": 86,
+        "time": 15.6633316,
+        "risk": 0.95238095,
+        "arrival": 0.00681608,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "100"
+      },
+      {
+        "id": 13,
+        "time": 6.04249375,
+        "risk": 0.95238095,
+        "arrival": 0.00393088,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "75"
+      }
+    ],
+    [
+      {
+        "id": 32,
+        "time": 16.99799731,
+        "risk": 0.712882,
+        "arrival": 0.00621786,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 56,
+        "time": 26.05630717,
+        "risk": 0.95238095,
+        "arrival": 0.4163433,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 39,
+        "time": 2.49215714,
+        "risk": 0.54588164,
+        "arrival": 0.00077992,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 65,
+        "time": 2.57292061,
+        "risk": 0.66172058,
+        "arrival": 0.00020695,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 86,
+        "time": 15.6633316,
+        "risk": 0.95238095,
+        "arrival": 0.00681608,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 60,
+        "time": 27.12979819,
+        "risk": 0.91589366,
+        "arrival": 0.31493078,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "75"
+      },
+      {
+        "id": 11,
+        "time": 2.4749394,
+        "risk": 0.59165955,
+        "arrival": 0.00412767,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 84,
+        "time": 9.61984662,
+        "risk": 0.95224145,
+        "arrival": 8.635e-05,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 86,
+        "time": 15.6633316,
+        "risk": 0.95238095,
+        "arrival": 0.00681608,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 55,
+        "time": 2.49725837,
+        "risk": 0.60713386,
+        "arrival": 0.00327543,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 46,
+        "time": 4.24881747,
+        "risk": 0.93649685,
+        "arrival": 0.00238027,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 0,
+        "time": 4.78757691,
+        "risk": 0.95238095,
+        "arrival": 0.00521596,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 11,
+        "time": 2.4749394,
+        "risk": 0.59165955,
+        "arrival": 0.00412767,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 78,
+        "time": 4.41305249,
+        "risk": 0.95238095,
+        "arrival": 0.00148539,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 96,
+        "time": 8.86156833,
+        "risk": 0.95238095,
+        "arrival": 0.00460019,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 88,
+        "time": 4.38516348,
+        "risk": 0.95198991,
+        "arrival": 0.00689817,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 95,
+        "time": 7.03290654,
+        "risk": 0.95238095,
+        "arrival": 0.00384075,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 90,
+        "time": 4.45064594,
+        "risk": 0.95238095,
+        "arrival": 0.00042986,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 5,
+        "time": 12.68536059,
+        "risk": 0.94739287,
+        "arrival": 0.0108639,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 24,
+        "time": 9.48088955,
+        "risk": 0.95238095,
+        "arrival": 0.51697746,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 18,
+        "time": 2.48097623,
+        "risk": 0.59499805,
+        "arrival": 0.00323313,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 97,
+        "time": 2.58441585,
+        "risk": 0.67629991,
+        "arrival": 0.00218585,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 87,
+        "time": 19.02008929,
+        "risk": 0.95238095,
+        "arrival": 0.19833147,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 3,
+        "time": 10.65271578,
+        "risk": 0.95238095,
+        "arrival": 0.00016533,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 22,
+        "time": 4.76952567,
+        "risk": 0.81338069,
+        "arrival": 0.00090437,
+        "sliderDissatisfiedSatisfied": "25",
+        "sliderBoredExcited": "75"
+      },
+      {
+        "id": 81,
+        "time": 10.94151607,
+        "risk": 0.59266929,
+        "arrival": 0.01499428,
+        "sliderDissatisfiedSatisfied": "100",
+        "sliderBoredExcited": "25"
+      },
+      {
+        "id": 70,
+        "time": 8.80112751,
+        "risk": 0.95238095,
+        "arrival": 0.00260715,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 35,
+        "time": 9.839785,
+        "risk": 0.95238095,
+        "arrival": 0.00411889,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 94,
+        "time": 2.46688271,
+        "risk": 0.57704691,
+        "arrival": 0.00333315,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 77,
+        "time": 2.62453242,
+        "risk": 0.70519327,
+        "arrival": 0.00835478,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 94,
+        "time": 2.46688271,
+        "risk": 0.57704691,
+        "arrival": 0.00333315,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 74,
+        "time": 18.65969756,
+        "risk": 0.80533438,
+        "arrival": 0.34973911,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 33,
+        "time": 10.09514715,
+        "risk": 0.95238095,
+        "arrival": 0.01454911,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 79,
+        "time": 8.66880314,
+        "risk": 0.95238095,
+        "arrival": 0.00806771,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 19,
+        "time": 20.99205212,
+        "risk": 0.9273726,
+        "arrival": 0.92671652,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 92,
+        "time": 7.29453496,
+        "risk": 0.95238095,
+        "arrival": 0.02182645,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 11,
+        "time": 2.4749394,
+        "risk": 0.59165955,
+        "arrival": 0.00412767,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 26,
+        "time": 2.45593625,
+        "risk": 0.5589005,
+        "arrival": 0.00600326,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 9,
+        "time": 5.94797711,
+        "risk": 0.3843993,
+        "arrival": 0.00026005,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 64,
+        "time": 19.05448862,
+        "risk": 0.95238095,
+        "arrival": 0.00160527,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 63,
+        "time": 4.55990186,
+        "risk": 0.92718216,
+        "arrival": 0.00644352,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 48,
+        "time": 4.37362482,
+        "risk": 0.95238095,
+        "arrival": 0.00899928,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 38,
+        "time": 14.7459012,
+        "risk": 0.89671121,
+        "arrival": 1.09712392,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 13,
+        "time": 6.04249375,
+        "risk": 0.95238095,
+        "arrival": 0.00393088,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 18,
+        "time": 2.48097623,
+        "risk": 0.59499805,
+        "arrival": 0.00323313,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 7,
+        "time": 4.35907971,
+        "risk": 0.95238095,
+        "arrival": 0.00207857,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 50,
+        "time": 15.15961098,
+        "risk": 0.95238095,
+        "arrival": 0.00059043,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 4,
+        "time": 4.41007752,
+        "risk": 0.95197433,
+        "arrival": 0.0005814,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
+    ],
+    [
+      {
+        "id": 44,
+        "time": 9.55190314,
+        "risk": 0.95238095,
+        "arrival": 0.00195955,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 55,
+        "time": 2.49725837,
+        "risk": 0.60713386,
+        "arrival": 0.00327543,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 87,
+        "time": 19.02008929,
+        "risk": 0.95238095,
+        "arrival": 0.19833147,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      },
+      {
+        "id": 69,
+        "time": 4.52448317,
+        "risk": 0.95221786,
+        "arrival": 0.00658212,
+        "sliderDissatisfiedSatisfied": 50,
+        "sliderBoredExcited": 50
+      }
     ]
   ],
   "Solution_Experiment_Simulated": {
-    "arrival": 0.00621786,
-    "id": 32,
-    "risk": 0.712882,
-    "time": 16.99799731
+    "arrival": 0.92671652,
+    "id": 19,
+    "risk": 0.9273726,
+    "time": 20.99205212
   },
   "Quiz_Experiment_Simulated": {
     "question1": "Disagree",
     "question2": "Disagree",
     "question3": "Disagree",
-    "question4": "Disagree",
-    "question5": "Disagree",
-    "question6": "Disagree",
-    "question7": "Disagree",
-    "question8": "Disagree",
-    "question9": "Disagree"
+    "question4": "Neutral",
+    "question5": "Neutral",
+    "question6": "Neutral",
+    "question7": "Neutral",
+    "question8": "Neutral",
+    "question9": "Neutral"
   },
   "Quiz_Beetween_Experiments": {
-    "question1": "Strongly Disagree",
+    "question1": "Neutral",
     "question2": "Simulation Method",
-    "question3": "Line Graph Method",
+    "question3": "Simulation Method",
+    "SolutionMethod": "Simulation",
     "question5": "",
-    "methodSelect": "Simulation"
+    "methodSelect": "GraphicLines"
   }
 }
